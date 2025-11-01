@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Web Development I - Yuma Natalia Hanane</title>
+    <meta name="description" content="Yuma Natalia Hanane's BYU-Idaho WDD 231 - Web Development I  course home page.">
+    <meta name="author" content="Yuma Natalia Hanane">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yumah/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/45?lang=por&id=p2#p2">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/sunny.svg" media="(min-width:500px)">
+            <img src="images/weather.svg" alt="Weather Icon of Partly Cloudy" width="120" height="100">
+        </picture>
+        <div class="weather">
+            <div class="row">
+                <div class="col1">Temperature:</div>
+                <div class="col2">24°C</div>
+            </div>
+            <div class="row">
+                <div class="col1">Conditions:</div>
+                <div class="col2">Partly Cloudy</div>
+            </div>
+            <div class="row">
+                <div class="col1">Wind:</div>
+                <div class="col2">26 km/h</div>
+            </div>
+        </div>
+        <figure>
+            <img src="images/mozambique-flag.svg" alt="Mozambique's Flag" width="180">
+            <figcaption>Official Flag of Mozambique</figcaption>
+        </figure>
+    </main>
+    <footer>
+    <p>&copy; <span id="currentyear"></span>🌝 Yuma Natalia Hanane 🌒 Mozambique</p>
+    <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
