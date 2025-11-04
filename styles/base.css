@@ -1,0 +1,119 @@
+* {
+    font-family: "Libertinus Serif Display", sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: rgb(15, 67, 29);
+}
+
+/* --------- Header ---------- */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid pink;
+    column-gap: 8px;
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 130%;
+    height: auto;
+}
+
+header span {
+    padding-left: 6px;
+}
+
+/* -------- Hamburger Button --------- */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: pink;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* changed font-family because "Libertinus Serif Display" was displying a small X */
+}
+
+.hamburger::before {
+    content: "\2630";
+
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/* ---------- Navigation --------- */
+
+.navigation {
+    display: none; /* not display the navigation bar by default*/
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid pink;
+
+}
+
+.navigation li.current {
+    background-color: pink;
+}
+
+.navigation a:hover {
+    background-color: rgb(222, 243, 225);
+}
+
+/* -------- Main --------- */
+
+h1 {
+    margin-left: 10px;
+}
+
+/* -------- Footer -------- */
+
+footer {
+    background-color: rgb(241, 207, 213);
+    padding: 1rem 10px;
+    text-align: center;
+}
+.socialLinks {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+}
+
+.socialLinks a {
+    display: flex;
+    width: 44px; /* touch device*/
+    height: 44px;
+    border:1px solid rgb(202, 83, 103);
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialLinks img {
+    width: 22px;
+    height: 22px;
+}
+
+.socialLinks a:hover {
+    background-color: rgb(222, 243, 225);
+}

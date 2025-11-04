@@ -1,0 +1,41 @@
+@media only screen and (min-width: 38rem) { /* 38rem is 608px*/
+    /* * {
+        font-size: 110px;
+    } */
+
+    header, nav, main, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block; /* ensures that the navigation shows whether show class is on or off*/
+        border-bottom: 1px solid pink;
+        margin: 0 auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        border: none;
+        text-align: center;
+    }
+   
+
+    
+}
