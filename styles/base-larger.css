@@ -32,7 +32,35 @@
         border: none;
         text-align: center;
     }
-   
 
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 70px 1fr auto;
+        grid-template-areas: 
+        "h1 h1"
+        "about photo"
+        "courses courses"
+    }
+
+    h1 {
+        grid-area: h1;
+    }
+   
+    .about {
+        grid-area: about;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+
+    .courses {
+        grid-area: courses;
+    }
+
+    section {
+        margin: 10px;
+    }
     
 }

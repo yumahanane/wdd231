@@ -83,8 +83,32 @@ header span {
 /* -------- Main --------- */
 
 h1 {
-    margin-left: 10px;
+    padding-left: 10px;
 }
+section {
+    border: 1px solid rgb(237, 200, 206);
+    border-top: none;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: pink;
+    padding: 10px;
+    margin: 0;
+}
+
+section p {
+    padding: 0 10px;
+}
+
+section img {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgb(21, 51, 24);
+}
+
+
 
 /* -------- Footer -------- */
 

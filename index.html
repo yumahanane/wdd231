@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-larger.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
@@ -24,13 +25,30 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
             <li><a href="#">Chamber Assignment</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Yuma Natalia Hanane. I am from Beira, in Mozambique. I am pursuing a B.S. in Software Development at
+            BYU-Idaho, through the BYU Pathway Worldwide Program. Previously, I attended Marist College, where I was pursuing a B.A.
+            in Mathematics. I am a member of The Church of Jesus Christ of Latter-day Saints. I was baptized in 2006. Currently, I
+            serve as a Senior Service Missionary at my stake's Resource Center.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <picture>
+                <source srcset="images/profile-large.webp" media="(min-width:500px)">
+                <img src="images/profile-small.webp" alt="profile photo" width="180">
+            </picture>
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+        </section>
     </main>
     <footer>
         <div class="socialLinks">
@@ -39,7 +57,7 @@
             <a href="https://www.instagram.com/hananeyuma?igsh=MWpuZjhseHZsOThhMg%3D%3D&utm_source=qr" target="_blank"><img src="images/instagram.svg" alt="instagram link" width="16" height="16"></a>
             <a href="https://www.facebook.com/yuma.natalia/" target="_blank"><img src="images/facebook.svg" alt="facebook link" width="16" height="16"></a>
         </div>
-    <p>&copy; <span id="currentyear"></span>🌝 Yuma Natalia Hanane 🌒 Mozambique</p>
+    <p>&copy; <span id="currentyear"></span>🌸 Yuma Natalia Hanane 🌸 Mozambique</p>
     <p><span id="lastModified"></span></p>
     </footer>
 </body>
