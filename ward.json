@@ -1,0 +1,28 @@
+{
+    "family_name": "Smith",
+    "move_in_date": "Nov 06, 2024",
+    "number_of_people": 4,
+    "isVisited": true,
+    "family_members": [
+        {
+            "name": "Hannah",
+            "gender": "Female",
+            "birthdate": "Aug 12, 1969"
+        },
+        {
+            "name": "Eric",
+            "gender": "Male",
+            "birthdate": "May 01, 1968"
+        },
+        {
+            "name": "Resa",
+            "gender": "Female",
+            "birthdate": "Jan 08, 1993"
+        },
+        {
+            "name": "Alex",
+            "gender": "Male",
+            "birthdate": "Aug 20, 1999"
+        }
+    ]
+}
