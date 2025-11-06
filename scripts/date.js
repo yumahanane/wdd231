@@ -1,10 +1,7 @@
-// last modified code
+// get the year
 const year = document.querySelector("#currentyear");
-
 const today = new Date();
+year.innerHTML = `${today.getFullYear()}`;
 
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
-
-var date = document.lastModified;
-document.getElementById("lastModified").innerHTML = "Last modification: " + date;
+// last modified
+document.getElementById("lastModified").innerHTML = `Last modified: ${document.lastModified}`;

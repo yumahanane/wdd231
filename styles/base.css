@@ -85,6 +85,7 @@ header span {
 h1 {
     padding-left: 10px;
 }
+
 section {
     border: 1px solid rgb(237, 200, 206);
     border-top: none;
@@ -108,6 +109,26 @@ section img {
     box-shadow: 0 0 10px rgb(21, 51, 24);
 }
 
+/* ------- Main (Courses Division) ---------  */
+ 
+
+#certif-courses #course-options {
+    display: flex;
+    justify-content: center;  
+}
+
+#certif-courses [type=button] {
+    margin: 20px 10px;
+    padding: 10px;
+    width: 5rem;
+}
+
+#certif-courses section {
+    border-top: 1px solid rgb(237, 200, 206);
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px;
+}
 
 
 /* -------- Footer -------- */
@@ -116,6 +137,7 @@ footer {
     background-color: rgb(241, 207, 213);
     padding: 1rem 10px;
     text-align: center;
+   
 }
 .socialLinks {
     display: flex;
