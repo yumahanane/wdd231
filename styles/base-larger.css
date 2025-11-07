@@ -68,27 +68,26 @@
     #certif-courses {
         display: grid;
         grid-template-rows: auto auto;
-
     }
 
 
-    #certif-courses #course-options {
+    #course-options {
         grid: 1 / 2;
     }
 
-    #certif-courses [type=button] {
+    #course-options [type=button] {
         width: 10rem;
     }
 
-    #certif-courses #all-cards {
+    #filtered {
         grid: 2 / 3;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         margin: 1rem;
     }
 
-    #certif-courses section {
+    #filtered section {
         margin: 0 auto;
         width: 13rem;
     }

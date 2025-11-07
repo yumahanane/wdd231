@@ -93,12 +93,29 @@ const updatedCourses = completedCourses.concat(notCompletedCourses);
 
 
 
+
 // ---------- Function ---------
 
 // call the function to create a section with all the courses, displayed by the title only
-createCoursesSection(updatedCourses);
+createCoursesSection();
 
-function createCoursesSection(coursesArray) {
+const allCourses = document.querySelector("#all");
+allCourses.addEventListener("click", () => {
+    filterCourses(updatedCourses);
+});
+
+const wddCourses = document.querySelector("#wdd");
+wddCourses.addEventListener("click", () => {
+    filterCourses(completedCourses);
+});
+
+const cseCourses = document.querySelector("#cse");
+cseCourses.addEventListener("click", () => {
+    filterCourses(notCompletedCourses);
+});
+
+
+function createCoursesSection() {
     document.querySelector("#certif-courses").innerHTML = "";
 
     let options = document.createElement("division")
@@ -107,13 +124,13 @@ function createCoursesSection(coursesArray) {
     let cseButton = document.createElement("button");
 
     options.setAttribute("id", "course-options");
-    allButton.textContent = "All"; 
+    allButton.textContent = "All";
     allButton.setAttribute("type", "button");
     allButton.setAttribute("id", "all");
-    wddButton.textContent = "WDD"; 
+    wddButton.textContent = "WDD";
     wddButton.setAttribute("type", "button");
     wddButton.setAttribute("id", "wdd");
-    cseButton.textContent = "CSE"; 
+    cseButton.textContent = "CSE";
     cseButton.setAttribute("type", "button");
     cseButton.setAttribute("id", "cse");
 
@@ -122,22 +139,21 @@ function createCoursesSection(coursesArray) {
     options.appendChild(cseButton);
 
     document.querySelector("#certif-courses").appendChild(options);
+}
 
-
+function filterCourses(coursesArray) {
+    let cards = document.querySelector("#filtered");
+    cards.innerHTML = "";
  
-    let cards = document.createElement("division")
-    cards.setAttribute("id", "all-cards");
-
     coursesArray.forEach(course => {
         let courseBox = document.createElement("section");
     
         courseBox.innerHTML = `${course['subject']} ${course['number']}`;
 
-        cards.appendChild(courseBox);
-
+        cards.appendChild(courseBox); 
     });
 
-    document.querySelector("#certif-courses").appendChild(cards);
+    document.querySelector("#filtered").appendChild(cards);
 
 }
 // ----------- END of Function -----------

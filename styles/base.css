@@ -112,18 +112,18 @@ section img {
 /* ------- Main (Courses Division) ---------  */
  
 
-#certif-courses #course-options {
+#course-options {
     display: flex;
     justify-content: center;  
 }
 
-#certif-courses [type=button] {
+#course-options [type=button] {
     margin: 20px 10px;
     padding: 10px;
     width: 5rem;
 }
 
-#certif-courses section {
+#filtered section {
     border-top: 1px solid rgb(237, 200, 206);
     border-radius: 7px;
     text-align: center;
