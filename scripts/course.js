@@ -94,7 +94,7 @@ const updatedCourses = completedCourses.concat(notCompletedCourses);
 
 
 
-// ---------- Function ---------
+// ---------- Function Calls ---------
 
 // call the function to create a section with all the courses, displayed by the title only
 createCoursesSection();
@@ -106,14 +106,16 @@ allCourses.addEventListener("click", () => {
 
 const wddCourses = document.querySelector("#wdd");
 wddCourses.addEventListener("click", () => {
-    filterCourses(completedCourses);
+    filterCourses(updatedCourses.filter(course => course.subject === "WDD"));
 });
 
 const cseCourses = document.querySelector("#cse");
 cseCourses.addEventListener("click", () => {
-    filterCourses(notCompletedCourses);
+    filterCourses(updatedCourses.filter(course => course.subject === "CSE"));
 });
 
+
+// -------- Functions To Create Buttons and Boxes---------
 
 function createCoursesSection() {
     document.querySelector("#certif-courses").innerHTML = "";
@@ -147,14 +149,20 @@ function filterCourses(coursesArray) {
  
     coursesArray.forEach(course => {
         let courseBox = document.createElement("section");
-    
-        courseBox.innerHTML = `${course['subject']} ${course['number']}`;
 
+        courseBox.innerHTML = `${course['subject']} ${course['number']}`;
+                
         cards.appendChild(courseBox); 
+
+        if (course['completed'] == false) {
+            courseBox.setAttribute("class", "toNotColor");
+        }
     });
 
     document.querySelector("#filtered").appendChild(cards);
-
+   
 }
-// ----------- END of Function -----------
+
+// ----------- Function To Count Credits -----------
+
 
