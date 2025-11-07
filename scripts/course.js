@@ -102,16 +102,21 @@ createCoursesSection();
 const allCourses = document.querySelector("#all");
 allCourses.addEventListener("click", () => {
     filterCourses(updatedCourses);
+    countCredits(updatedCourses);
 });
 
 const wddCourses = document.querySelector("#wdd");
 wddCourses.addEventListener("click", () => {
     filterCourses(updatedCourses.filter(course => course.subject === "WDD"));
+    countCredits(updatedCourses.filter(course => course.subject === "WDD"));
+
 });
 
 const cseCourses = document.querySelector("#cse");
 cseCourses.addEventListener("click", () => {
     filterCourses(updatedCourses.filter(course => course.subject === "CSE"));
+    countCredits(updatedCourses.filter(course => course.subject === "CSE"));
+
 });
 
 
@@ -144,9 +149,9 @@ function createCoursesSection() {
 }
 
 function filterCourses(coursesArray) {
-    let cards = document.querySelector("#filtered");
-    cards.innerHTML = "";
- 
+    document.querySelector("#filtered").innerHTML = "";
+    
+    let cards = document.createElement("div");
     coursesArray.forEach(course => {
         let courseBox = document.createElement("section");
 
@@ -165,4 +170,14 @@ function filterCourses(coursesArray) {
 
 // ----------- Function To Count Credits -----------
 
+function countCredits(anArray) {
+    document.querySelector("#credits").innerHTML = "";
 
+    let count = 0;
+    anArray.forEach(course => {
+        count += course['credits'];
+    });
+
+    document.querySelector("#credits").innerHTML = `The total credits for courses listed above is <strong>${count}</strong>`;
+
+}

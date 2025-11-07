@@ -64,12 +64,10 @@
        margin: 0;
     }
 
-
     #certif-courses {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
     }
-
 
     #course-options {
         grid: 1 / 2;
@@ -79,8 +77,12 @@
         width: 10rem;
     }
 
-    #filtered {
+    #credits {
         grid: 2 / 3;
+    }
+
+    #filtered div {
+        grid: 3 / 4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
@@ -91,8 +93,7 @@
         margin: 0 auto;
         width: 13rem;
     }
-
-    
+   
     footer {
         margin-top: 10px;
     }

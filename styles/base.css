@@ -39,7 +39,6 @@ header span {
 
 .hamburger::before {
     content: "\2630";
-
 }
 
 .hamburger.show::before {
@@ -63,13 +62,11 @@ header span {
     padding: 0;
 }
 
-
 .navigation a {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
     border-bottom: 1px solid pink;
-
 }
 
 .navigation li.current {
@@ -111,7 +108,6 @@ section img {
 
 /* ------- Main (Courses Division) ---------  */
  
-
 #course-options {
     display: flex;
     justify-content: center;  
@@ -127,6 +123,10 @@ section img {
 
 #course-options [type=button]:hover {
     background-color: rgb(222, 243, 225);
+}
+
+#credits {
+   text-align: center;
 }
 
 #filtered section {
@@ -147,9 +147,9 @@ section img {
 footer {
     background-color: rgb(241, 207, 213);
     padding: 1rem 10px;
-    text-align: center;
-   
+    text-align: center;   
 }
+
 .socialLinks {
     display: flex;
     column-gap: 8px;
