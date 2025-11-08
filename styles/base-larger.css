@@ -70,7 +70,7 @@
     }
 
     #course-options {
-        grid: 1 / 2;
+        grid-area: 1 / 2;
     }
 
     #course-options [type=button] {
@@ -78,11 +78,11 @@
     }
 
     #credits {
-        grid: 2 / 3;
+        grid-area: 2 / 3;
     }
 
     #filtered div {
-        grid: 3 / 4;
+        grid-area: 3 / 4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
