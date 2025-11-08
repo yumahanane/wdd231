@@ -134,12 +134,16 @@ function createCoursesSection() {
     allButton.textContent = "All";
     allButton.setAttribute("type", "button");
     allButton.setAttribute("id", "all");
+    allButton.setAttribute("name", "All Courses");
     wddButton.textContent = "WDD";
     wddButton.setAttribute("type", "button");
     wddButton.setAttribute("id", "wdd");
+    allButton.setAttribute("name", "WDD Courses");
     cseButton.textContent = "CSE";
     cseButton.setAttribute("type", "button");
     cseButton.setAttribute("id", "cse");
+    allButton.setAttribute("name", "CSE Courses");
+
 
     options.appendChild(allButton);
     options.appendChild(wddButton);
@@ -173,11 +177,15 @@ function filterCourses(coursesArray) {
 function countCredits(anArray) {
     document.querySelector("#credits").innerHTML = "";
 
-    let count = 0;
-    anArray.forEach(course => {
-        count += course['credits'];
-    });
+    // let count = 0;
+    // anArray.forEach(course => {
+    //     count += course['credits'];
+    // });
 
+    const count = anArray.reduce((accumulator, item) => {
+        return accumulator += item['credits'];  
+    }, 0)
+    
     document.querySelector("#credits").innerHTML = `The total credits for courses listed above is <strong>${count}</strong>`;
 
 }
