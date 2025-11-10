@@ -1,0 +1,138 @@
+/* color Scheme
+
+navy
+purple
+orange
+yellow
+
+#1a2238
+#9daaf2
+#ff6a3d
+#f4db7d */
+
+* {
+    font-family: "Libertinus Serif Display", sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+/* --------- Header ---------- */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid pink;
+    column-gap: 8px;
+    align-items: end;
+    background-color: #1a2238;
+    color: white;
+}
+
+header img {
+    display: block;
+    width: 150%;
+    height: auto;
+    align-self: center;
+}
+
+header span {
+    padding-left: 10px;
+}
+
+/* -------- Hamburger Button --------- */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* changed font-family because "Libertinus Serif Display" was displying a small X */
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/* ---------- Navigation --------- */
+
+.navigation {
+    display: none;
+    min-width: 320px;
+    /* not display the navigation bar by default*/
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.navigation li.current {
+    background-color: #ff6a3d;
+}
+
+/* #9daaf2 #ff6a3d #f4db7d; */
+
+
+.navigation a:hover {
+    background-color: rgb(222, 243, 225);
+}
+
+/* -------- Main --------- */
+
+
+
+
+/* -------- Footer -------- */
+
+footer {
+    background-color: rgb(241, 207, 213);
+    padding: 1rem 10px;
+    text-align: start;
+}
+
+.socialLinks {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+}
+
+.socialLinks a {
+    display: flex;
+    width: 44px;
+    /* touch device*/
+    height: 44px;
+    border: 1px solid rgb(202, 83, 103);
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialLinks img {
+    width: 22px;
+    height: 22px;
+}
+
+.socialLinks a:hover {
+    background-color: rgb(222, 243, 225);
+}
