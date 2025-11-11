@@ -1,0 +1,64 @@
+@media only screen and (min-width: 38rem) {
+    /* 38rem is 608px*/
+
+    header,
+    main,
+    footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto auto;
+        padding: 60px 40px 10px 40px;
+        
+    }
+
+    header img {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    header span {
+        padding-left: 40px;
+        align-self: center;
+        font-size: 1.5rem;
+        /* border-bottom: 1px solid #ff6a3d; */
+        text-decoration: underline #ff6a3d;
+        
+        
+    }   
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+       
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        border: none;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        gap: 1em;
+        padding: 40px;
+    }
+
+    footer div {
+        flex: 1;
+    }
+}

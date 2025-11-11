@@ -21,8 +21,8 @@ yellow
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 10px;
-    border-bottom: 1px solid pink;
+    padding: 25px 0 5px 10px;
+    border-bottom: 1px solid #ff6a3d;
     column-gap: 8px;
     align-items: end;
     background-color: #1a2238;
@@ -65,7 +65,7 @@ header span {
 
 .navigation {
     display: none;
-    min-width: 320px;
+    min-width: 300px;
     /* not display the navigation bar by default*/
 }
 
@@ -91,11 +91,9 @@ header span {
     background-color: #ff6a3d;
 }
 
-/* #9daaf2 #ff6a3d #f4db7d; */
-
 
 .navigation a:hover {
-    background-color: rgb(222, 243, 225);
+    background-color: #717bb1;
 }
 
 /* -------- Main --------- */
@@ -106,33 +104,47 @@ header span {
 /* -------- Footer -------- */
 
 footer {
-    background-color: rgb(241, 207, 213);
+    background-color: #1a2238;
+    color: white;
     padding: 1rem 10px;
     text-align: start;
 }
 
+.contact, .socialLinks {
+    padding-bottom: 1.5rem;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
 .socialLinks {
     display: flex;
-    column-gap: 8px;
+    column-gap: 20px;
     justify-content: center;
 }
 
 .socialLinks a {
     display: flex;
-    width: 44px;
+    width: 50px;
     /* touch device*/
-    height: 44px;
-    border: 1px solid rgb(202, 83, 103);
-    border-radius: 22px;
+    height: 50px;
+    border: 1px solid #ff6a3d;
+    border-radius: 50px;
     justify-content: center;
     align-items: center;
 }
 
+.chamber-name {
+    color: #ff6a3d;
+
+}
+
 .socialLinks img {
-    width: 22px;
-    height: 22px;
+    width: 35px;
+    height: 35px;
 }
 
 .socialLinks a:hover {
-    background-color: rgb(222, 243, 225);
+    background-color: white;
 }
