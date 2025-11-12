@@ -2,60 +2,60 @@
   "companies": [
     {
         "name": "Sweetest Bakery",
-        "address": "102 Major Serpa Street Beira 2100",
+        "address": "102 Rua Major Serpa Beira 2100",
         "contact": "(+258) 82-573-3281",
-        "websireurl": "https://sweetestbakery.com/",
+        "websiteurl": "https://sweetestbakery.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
         "membershiplevel": 1
 
     },
     {
-        "name": "",
-        "address": "",
-        "contact": "",
-        "websireurl": "",
-        "imageurl": "",
-        "membershiplevel": ""
+        "name": "A Florista",
+        "address": "75 Rua Alfredo Lawley Beira 2100",
+        "contact": "(+258) 82-573-3281",
+        "websiteurl": "https://aflorista.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "membershiplevel": 3
     },
     {
-        "name": "",
-        "address": "",
-        "contact": "",
-        "websireurl": "",
-        "imageurl": "",
-        "membershiplevel": ""
+        "name": "Carpintaria da Beira",
+        "address": "230 Avenida Poder Popular Beira 2100",
+        "contact": "(+258) 85-771-2415",
+        "websiteurl": "https://carpintariadabeira.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "membershiplevel": 3
     },
     {
-        "name": "",
-        "address": "",
-        "contact": "",
-        "websireurl": "",
-        "imageurl": "",
-        "membershiplevel": ""
+        "name": "Tasty Catering",
+        "address": "501 Rua Machado dos Santos Beira 2100",
+        "contact": "(+258) 87-546-1990",
+        "websiteurl": "https://testycatering.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "membershiplevel": 2
     },
     {
-        "name": "",
-        "address": "",
-        "contact": "",
-        "websireurl": "",
-        "imageurl": "",
-        "membershiplevel": ""
+        "name": "O Cantinho da Arte",
+        "address": "73 Rua Fernao Lopes de Castanheda Beira 2100",
+        "contact": "(+258) 84-322-8671",
+        "websiteurl": "https://ocantinhodaarte.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "membershiplevel": 1
     },
     {
-        "name": "",
-        "address": "",
-        "contact": "",
-        "websireurl": "",
-        "imageurl": "",
-        "membershiplevel": ""
+        "name": "Seu Sorriso Importa",
+        "address": "301 Avenida Eduardo Mondlane Beira 2100",
+        "contact": "(+258) 82-970-3011",
+        "websiteurl": "https://seusorrisoimporta.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "membershiplevel": 3
     },
     {
-        "name": "",
-        "address": "",
-        "contact": "",
-        "websireurl": "",
-        "imageurl": "",
-        "membershiplevel": ""
+        "name": "Supermercado Fresca",
+        "address": "238 Avenida Poder Popular Beira 2100",
+        "contact": "(+258) 84-091-2611",
+        "websiteurl": "https://supermercadofresca.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "membershiplevel": 2
     }
   ]  
 }
