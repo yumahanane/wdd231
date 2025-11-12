@@ -5,7 +5,6 @@ const cards = document.querySelector('#cards');
 async function getCompaniesData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data); 
     displayCompanies(data.companies); 
 };
 
@@ -22,7 +21,7 @@ const displayCompanies = (companies) => {
         address.textContent = company.address;
         contact.textContent = company.contact;
         siteurl.textContent = company.websiteurl;
-        logo.setAttribute('src', prophet.imageurl);
+        logo.setAttribute('src', company.imageurl);
         logo.setAttribute('alt', `Logo of ${company.name}`); 
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '150');
