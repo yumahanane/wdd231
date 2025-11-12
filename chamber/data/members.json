@@ -1,0 +1,61 @@
+{
+  "companies": [
+    {
+        "name": "Sweet Tooth Bakery",
+        "address": "102 Major Serpa Street Beira 2100",
+        "contact": "(+258) 82-573-3281",
+        "websireurl": "https://sweettoothbakery.com/",
+        "imageurl": "",
+        "membershiplevel": ""
+
+    },
+    {
+        "name": "",
+        "address": "",
+        "contact": "",
+        "websireurl": "",
+        "imageurl": "",
+        "membershiplevel": ""
+    },
+    {
+        "name": "",
+        "address": "",
+        "contact": "",
+        "websireurl": "",
+        "imageurl": "",
+        "membershiplevel": ""
+    },
+    {
+        "name": "",
+        "address": "",
+        "contact": "",
+        "websireurl": "",
+        "imageurl": "",
+        "membershiplevel": ""
+    },
+    {
+        "name": "",
+        "address": "",
+        "contact": "",
+        "websireurl": "",
+        "imageurl": "",
+        "membershiplevel": ""
+    },
+    {
+        "name": "",
+        "address": "",
+        "contact": "",
+        "websireurl": "",
+        "imageurl": "",
+        "membershiplevel": ""
+    },
+    {
+        "name": "",
+        "address": "",
+        "contact": "",
+        "websireurl": "",
+        "imageurl": "",
+        "membershiplevel": ""
+    }
+  ]  
+}
