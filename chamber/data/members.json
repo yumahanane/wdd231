@@ -14,7 +14,7 @@
         "address": "75 Rua Alfredo Lawley Beira 2100",
         "contact": "(+258) 82-573-3281",
         "websiteurl": "https://aflorista.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/carpintaria.webp",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/florista.webp",
         "membershiplevel": 3
     },
     {
@@ -22,7 +22,7 @@
         "address": "230 Avenida Poder Popular Beira 2100",
         "contact": "(+258) 85-771-2415",
         "websiteurl": "https://carpintariadabeira.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/carpintaria.webp",
         "membershiplevel": 3
     },
     {
@@ -30,15 +30,15 @@
         "address": "501 Rua Machado dos Santos Beira 2100",
         "contact": "(+258) 87-546-1990",
         "websiteurl": "https://testycatering.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/catering.webp",
         "membershiplevel": 2
     },
     {
-        "name": "O Cantinho da Arte",
+        "name": "Cantinho da Arte",
         "address": "73 Rua Fernao Lopes de Castanheda Beira 2100",
         "contact": "(+258) 84-322-8671",
-        "websiteurl": "https://ocantinhodaarte.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "websiteurl": "https://cantinhodaarte.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/arte.webp",
         "membershiplevel": 1
     },
     {
@@ -46,7 +46,7 @@
         "address": "301 Avenida Eduardo Mondlane Beira 2100",
         "contact": "(+258) 82-970-3011",
         "websiteurl": "https://seusorrisoimporta.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/sorriso.webp",
         "membershiplevel": 3
     },
     {
@@ -54,7 +54,7 @@
         "address": "238 Avenida Poder Popular Beira 2100",
         "contact": "(+258) 84-091-2611",
         "websiteurl": "https://supermercadofresca.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.png",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/fresca.webp",
         "membershiplevel": 2
     }
   ]  
