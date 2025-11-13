@@ -104,24 +104,33 @@ h1 {
 }
 
 .menu {
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
 
     button {
         padding: 0.5rem 1rem;
-        font-weight: 700;
         background-color: #cdd2ed;
     }
 
     button:hover {
         background-color: #f8ebbd;
     }
+        
 }
 
+#cards {
+    margin-bottom: 1rem;
+}
 
-.grid-card { 
+/* .active {
+    background-color: #f8ebbd;
+} */
+
+
+.grid section { 
     border: 1px solid rgb(205, 210, 237);
     margin: 1rem 0;
+    padding: 15px;
     background-color: white;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -130,28 +139,41 @@ h1 {
         margin: 10px;
     }
 
-    p {
-        margin: 5px;
+    h2 {
+        display: none;
+    }
+
+    p, a {
+        margin: 5px 0;
         font-size: 1rem;
     }
 }
 
-.grid-card:hover {
+.grid section:hover {
     transform: scale(1.03);
 }
 
 
-.list-card {
+
+.list section {
     display: grid;
-    grid-template-columns: 20% 12% 10% 58%;
-    gap: 12px;
-    /* border-top: 1px solid #cdd2ed; */
-    padding: 0.1rem;
+    grid-template-columns: 18% 14% 11% 58%;
+    column-gap: 7px;
+    border-top: 1px solid #cdd2ed;
+    padding: 0.2rem 0;
     background-color: #f4eed6;
 
-    p {
-            margin: 5px;
-            font-size: .7rem;
+    img {
+        display: none;
+    }
+
+    h2, p, a {
+        margin: 5px 0;
+        font-size: .8rem;
+    }
+
+    &:nth-child(even) {
+        background-color: white;
     }
 }
 

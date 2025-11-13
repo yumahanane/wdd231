@@ -52,6 +52,28 @@
         text-align: center;
     }
 
+    .grid  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 1rem;
+
+    }
+
+    .list section {
+        grid-template-columns: 15% 28% 15% 35%;
+        column-gap: 15px;
+        border-top: 1px solid #cdd2ed;
+        padding: 0.5rem 0;
+        
+
+        h2, p, a {
+            font-size: .9rem;
+        }
+
+    }
+
+
+
     footer {
         display: flex;
         gap: 1em;

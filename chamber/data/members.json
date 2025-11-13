@@ -2,7 +2,7 @@
   "companies": [
     {
         "name": "Sweetest Bakery",
-        "address": "102 Rua Major Serpa Beira 2100",
+        "address": "12 Rua Major Serpa Beira 2100",
         "contact": "(+258) 82 573 3281",
         "websiteurl": "https://sweetestbakery.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/bakery.webp",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Carpintaria da Beira",
-        "address": "230 Ave Poder Popular Beira 2100",
+        "address": "23 Ave Poder Popular Beira 2100",
         "contact": "(+258) 85 771 2415",
         "websiteurl": "https://carpintariadabeira.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/carpintaria.webp",
@@ -27,7 +27,7 @@
     },
     {
         "name": "Tasty Catering",
-        "address": "501 Rua Machado dos Santos Beira 2100",
+        "address": "51 Rua Machado dos Santos Beira 2100",
         "contact": "(+258) 87 546 1990",
         "websiteurl": "https://tastycatering.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/catering.webp",
@@ -43,7 +43,7 @@
     },
     {
         "name": "Seu Sorriso Importa",
-        "address": "301 Rua Fernao Lopes Beira 2100",
+        "address": "33 Rua Fernao Lopes Beira 2100",
         "contact": "(+258) 82 970 3011",
         "websiteurl": "https://seusorrisoimporta.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/sorriso.webp",
@@ -51,7 +51,7 @@
     },
     {
         "name": "Super Mercado Fresca",
-        "address": "238 Avenida Poder Popular Beira 2100",
+        "address": "28 Ave Poder Popular Beira 2100",
         "contact": "(+258) 84 091 2611",
         "websiteurl": "https://supermercadofresca.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/fresca.webp",
