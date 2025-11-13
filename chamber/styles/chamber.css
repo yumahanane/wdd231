@@ -3,7 +3,7 @@
 navy
 purple
 orange
-yellow
+yellow  #f4eed6;
 
 #1a2238
 #9daaf2
@@ -98,6 +98,62 @@ header span {
 
 /* -------- Main --------- */
 
+h1 {
+    padding: 25px;
+
+}
+
+.menu {
+    margin: 2rem auto;
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        background-color: #cdd2ed;
+    }
+
+    button:hover {
+        background-color: #f8ebbd;
+    }
+}
+
+
+.grid-card { 
+    border: 1px solid rgb(205, 210, 237);
+    margin: 1rem 0;
+    background-color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    img {
+        margin: 10px;
+    }
+
+    p {
+        margin: 5px;
+        font-size: 1rem;
+    }
+}
+
+.grid-card:hover {
+    transform: scale(1.03);
+}
+
+
+.list-card {
+    display: grid;
+    grid-template-columns: 20% 12% 10% 58%;
+    gap: 12px;
+    /* border-top: 1px solid #cdd2ed; */
+    padding: 0.1rem;
+    background-color: #f4eed6;
+
+    p {
+            margin: 5px;
+            font-size: .7rem;
+    }
+}
 
 
 
@@ -129,7 +185,7 @@ footer p {
     width: 50px;
     /* touch device*/
     height: 50px;
-    border: 1px solid #ff6a3d;
+    border: 3px solid white;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
