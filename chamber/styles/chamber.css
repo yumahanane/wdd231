@@ -34,7 +34,7 @@ header span {
     background: none;
     border: none;
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* changed font-family because "Libertinus Serif Display" was displying a small X */
@@ -169,7 +169,6 @@ h1 {
 
 footer {
     background-color: #1a2238;
-    color: white;
     padding: 1rem 10px;
     text-align: start;
 }
@@ -180,6 +179,7 @@ footer {
 
 footer p {
     margin: 10px 0;
+    color: #ffffff;
 }
 
 .socialLinks {
@@ -193,7 +193,7 @@ footer p {
     width: 50px;
     /* touch device*/
     height: 50px;
-    border: 3px solid white;
+    border: 3px solid #ffffff;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
