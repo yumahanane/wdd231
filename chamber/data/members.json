@@ -10,6 +10,22 @@
 
     },
     {
+        "name": "Tasty Catering",
+        "address": "51 Rua Machado dos Santos Beira 2100",
+        "contact": "(+258) 87 546 1990",
+        "websiteurl": "https://tastycatering.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/catering.webp",
+        "membershiplevel": 2
+    },
+    {
+        "name": "Super Mercado Fresca",
+        "address": "28 Ave Poder Popular Beira 2100",
+        "contact": "(+258) 84 091 2611",
+        "websiteurl": "https://supermercadofresca.com/",
+        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/fresca.webp",
+        "membershiplevel": 2
+    },
+    {
         "name": "A Florista",
         "address": "75 Rua Alfredo Lawley Beira 2100",
         "contact": "(+258) 82 573 3281",
@@ -24,15 +40,7 @@
         "websiteurl": "https://carpintariadabeira.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/carpintaria.webp",
         "membershiplevel": 3
-    },
-    {
-        "name": "Tasty Catering",
-        "address": "51 Rua Machado dos Santos Beira 2100",
-        "contact": "(+258) 87 546 1990",
-        "websiteurl": "https://tastycatering.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/catering.webp",
-        "membershiplevel": 2
-    },
+    }, 
     {
         "name": "Cantinho da Arte",
         "address": "73 Rua Fernao Lopes Beira 2100",
@@ -48,14 +56,6 @@
         "websiteurl": "https://seusorrisoimporta.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/sorriso.webp",
         "membershiplevel": 3
-    },
-    {
-        "name": "Super Mercado Fresca",
-        "address": "28 Ave Poder Popular Beira 2100",
-        "contact": "(+258) 84 091 2611",
-        "websiteurl": "https://supermercadofresca.com/",
-        "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/fresca.webp",
-        "membershiplevel": 2
     }
   ]  
 }

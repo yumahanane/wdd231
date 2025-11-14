@@ -7,6 +7,10 @@
         margin: 0 auto;
     }
 
+    main {
+        padding: 0 40px;
+    }
+
     header {
         grid-template-columns: 24px auto auto;
         padding: 60px 40px 10px 40px;
@@ -22,11 +26,7 @@
     header span {
         padding-left: 40px;
         align-self: center;
-        font-size: 1.5rem;
-        /* border-bottom: 1px solid #ff6a3d; */
-        /* text-decoration: underline #ff6a3d; */
-        
-        
+        font-size: 1.5rem;           
     }   
 
     .hamburger {
@@ -54,22 +54,25 @@
 
     .grid  {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 0 1rem;
 
+        section {
+            margin: 1rem 0;
+            padding: 15px 0;
+        }
     }
 
+
     .list section {
-        grid-template-columns: 15% 28% 15% 35%;
-        column-gap: 15px;
+        grid-template-columns: 20% 32% 15% 35%;
+        column-gap: 20px;
         border-top: 1px solid #cdd2ed;
-        padding: 0.5rem 0;
-        
+        padding: 0.5rem 10px;       
 
         h2, p, a {
-            font-size: .9rem;
+            font-size: 1.2rem;
         }
-
     }
 
 

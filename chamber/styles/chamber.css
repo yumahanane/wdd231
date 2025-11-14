@@ -89,6 +89,11 @@ header span {
 
 .navigation li.current {
     background-color: #ff6a3d;
+    
+    
+    a {
+        color:#1a2238;
+    }
 }
 
 
@@ -99,7 +104,7 @@ header span {
 /* -------- Main --------- */
 
 h1 {
-    padding: 25px;
+    padding: 10px;
 
 }
 
@@ -109,11 +114,14 @@ h1 {
 
     button {
         padding: 0.5rem 1rem;
-        background-color: #cdd2ed;
+        margin: 0.3rem;
+        background-color: #ed9074;
+        border: 2px solid #8bc2e3;
     }
 
     button:hover {
-        background-color: #f8ebbd;
+        background-color: #cdd2ed;
+        
     }
         
 }
@@ -122,18 +130,15 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* .active {
-    background-color: #f8ebbd;
-} */
-
 
 .grid section { 
     border: 1px solid rgb(205, 210, 237);
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 15px;
     background-color: white;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 
     img {
         margin: 10px;
@@ -142,6 +147,7 @@ h1 {
     h2 {
         display: none;
     }
+
 
     p, a {
         margin: 5px 0;
@@ -157,20 +163,22 @@ h1 {
 
 .list section {
     display: grid;
-    grid-template-columns: 18% 14% 11% 58%;
-    column-gap: 7px;
+    grid-template-columns: 20% 15% 11% 49%;
+    column-gap: 5px;
     border-top: 1px solid #cdd2ed;
-    padding: 0.2rem 0;
-    background-color: #f4eed6;
+    padding: 0.2rem 0 0 10px;
+    background-color: #b1d6ec;
+    align-items: center;
 
     img {
         display: none;
     }
 
     h2, p, a {
-        margin: 5px 0;
-        font-size: .8rem;
+        font-size: .6rem;
+        color: #1a2238;
     }
+
 
     &:nth-child(even) {
         background-color: white;
