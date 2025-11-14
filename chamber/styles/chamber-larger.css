@@ -54,11 +54,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 0 1rem;
+    }
 
-        section {
-            margin: 1rem 0;
-            padding: 15px 0;
-        }
+    .grid section {
+        margin: 1rem 0;
+        padding: 15px 0;
     }
 
 
@@ -67,13 +67,11 @@
         column-gap: 20px;
         border-top: 1px solid #cdd2ed;
         padding: 0.5rem 10px;       
-
-        h2, p, a {
-            font-size: 1.2rem;
-        }
     }
 
-
+    .list section h2, p, a {
+        font-size: 1.2rem;
+    }
 
     footer {
         display: flex;

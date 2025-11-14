@@ -77,10 +77,10 @@ header span {
 
 .navigation li.current {
     background-color: #ff6a3d;
+}
 
-    a {
-        color: black;
-    }   
+.current a {
+    color: black;
 }
 
 
@@ -97,18 +97,18 @@ h1 {
 
 .menu {
     margin: 1rem auto;
-    text-align: center;
+    text-align: center;     
+}
 
-    button {
-        padding: 0.5rem 1rem;
-        margin: 0.3rem;
-        background-color: #ed9074;
-        border: 2px solid #8bc2e3;
-    }
+.menu button {
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    background-color: #ed9074;
+    border: 2px solid #8bc2e3;
+}
 
-    button:hover {
-        background-color: #8bc2e3;
-    }       
+.menu button:hover {
+    background-color: #8bc2e3;
 }
 
 #cards {
@@ -122,19 +122,19 @@ h1 {
     background-color: white;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-    img {
-        margin: 10px;
-    }
+.grid section img {
+    margin: 10px;
+}
 
-    h2 {
-        display: none;
-    }
+.grid section h2 {
+    display: none;
+}
 
-    p, a {
-        margin: 5px 0;
-        font-size: 1rem;
-    }
+.grid section p, a {
+    margin: 5px 0;
+    font-size: 1rem;
 }
 
 .grid section:hover {
@@ -149,23 +149,21 @@ h1 {
     padding: 0.2rem 0 0 10px;
     background-color: #b1d6ec;
     align-items: center;
+}
 
-    img {
-        display: none;
-    }
+.list section  img {
+    display: none;
+}
 
-    h2, p, a {
-        font-size: .6rem;
-        color: #1a2238;
-    }
-
-
-    &:nth-child(even) {
-        background-color: white;
-    }
+.list section  h2, p, a {
+    font-size: .6rem;
+    color: #1a2238;
 }
 
 
+.list section &:nth-child(even) {
+    background-color: white;
+}
 
 /* -------- Footer -------- */
 
