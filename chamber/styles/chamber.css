@@ -14,7 +14,7 @@ header {
     column-gap: 8px;
     align-items: end;
     background-color: #1a2238;
-    color: white;
+    color: #ffffff;
 }
 
 header img {
@@ -71,8 +71,8 @@ header span {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
-    border-bottom: 1px solid white;
-    color: white;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 .navigation li.current {
@@ -80,13 +80,13 @@ header span {
 }
 
 .current a {
-    color: black;
+    color: #000000;
 }
 
 
 .navigation a:hover {
     background-color: #8bc2e3;
-    color: black;
+    color: #000000;
 }
 
 /* -------- Main --------- */
@@ -116,12 +116,12 @@ h1 {
 }
 
 .grid section { 
-    border: 1px solid rgb(205, 210, 237);
+    border: 1px solid #cdd2ed;
     margin: 1rem;
     padding: 15px;
-    background-color: white;
+    background-color: #ffffff;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: #00000059 0px 5px 15px;
 }
 
 .grid section img {
@@ -162,7 +162,7 @@ h1 {
 
 
 .list section:nth-child(even) {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 /* -------- Footer -------- */
@@ -210,5 +210,5 @@ footer p {
 }
 
 .socialLinks a:hover {
-    background-color: white;
+    background-color: #ffffff;
 }
