@@ -161,7 +161,7 @@ h1 {
 }
 
 
-.list section &:nth-child(even) {
+.list section:nth-child(even) {
     background-color: white;
 }
 
