@@ -69,7 +69,7 @@
         padding: 0.5rem 10px;       
     }
 
-    .list section h2, p, a {
+    .list h2, .list p, .list a {
         font-size: 1.2rem;
     }
 

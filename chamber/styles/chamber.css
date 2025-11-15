@@ -124,21 +124,21 @@ h1 {
     box-shadow: #00000059 0px 5px 15px;
 }
 
-.grid section img {
+.grid section:hover {
+    transform: scale(1.03);
+}
+
+.grid img {
     margin: 10px;
 }
 
-.grid section h2 {
+.grid h2 {
     display: none;
 }
 
-.grid section p, a {
+.grid p, .grid a {
     margin: 5px 0;
     font-size: 1rem;
-}
-
-.grid section:hover {
-    transform: scale(1.03);
 }
 
 .list section {
@@ -151,11 +151,11 @@ h1 {
     align-items: center;
 }
 
-.list section  img {
+.list img {
     display: none;
 }
 
-.list section  h2, p, a {
+.list h2, .list p, .list a {
     font-size: .6rem;
     color: #1a2238;
 }
