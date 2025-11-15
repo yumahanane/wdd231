@@ -63,14 +63,14 @@
 
 
     .list section {
-        grid-template-columns: 20% 32% 15% 35%;
+        grid-template-columns: 20% 30% 15% 28%;
         column-gap: 20px;
         border-top: 1px solid #cdd2ed;
         padding: 0.5rem 10px;       
     }
 
     .list h2, .list p, .list a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     footer {
