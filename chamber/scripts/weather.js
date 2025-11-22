@@ -1,14 +1,19 @@
-const currentTemp = document.querySelector("#current-temp");
+const currentTemp = document.querySelector(".current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const figCaption = document.querySelector("figcaption");
 
 
+const tomorrow = document.querySelector("#tomorrow");
+const aftertomorrow = document.querySelector("#dayaftertomorrow");
+
 const key = `a6879f332f76c71d2de2a6391b3a219f`;
 const lat = "-19.8324";
-const latong = "34.8408";
+const long = "34.8408";
 
 
-const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`;
+
+
+const url = `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${key}&units=metric`;
 
 
 async function apiFetch() {
@@ -26,8 +31,10 @@ async function apiFetch() {
     }
 }
 
+
+
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`; // &deg; is code for degree symbol
+    currentTemp.innerHTML = `${data.list[0].main.temp}&deg;C`; // &deg; is code for degree symbol
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('src', iconsrc);
@@ -35,6 +42,14 @@ function displayResults(data) {
 
     let desc = data.weather[0].description;
     figCaption.textContent = `${desc}`;
+
+
+
+    tomorrow.innerHTML = `${data.main.temp}&deg;C`; // &deg; is code for degree symbol
+    aftertomorrow.innerHTML = `${data.main.temp}&deg;C`; // &deg; is code for degree symbol
+
 }
 
+
 apiFetch();
+

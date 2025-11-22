@@ -22,6 +22,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -46,12 +47,23 @@
             <a href="#" target="_blank">Join the Chamber</a>
         </div>
         <h1>Home</h1>
-        <div id="events"></div>
+        <div id="events">
+            <h2>Events</h2>
+            <h3>Chiveve Spirit of Christmas</h3>
+            <p><strong>December 5th, 2025: 09 am - 11 am, Macuti Orphanage</strong>- Join us in wrapping gifts for our children.</p>
+            <p>Bring a friend with you. The children will appreciate your service.</p>
+        </div>
         <div id="weather">
             <h2>Curent Weather</h2>
             <img id="weather-icon" src="" alt="">
-            <span id="current-temp"></span>
+            <span class="current-temp"></span>
             <figcaption></figcaption>
+        </div>
+        <div id="forecast">
+            <h2>Weather Forecast</h2>
+            <span class="current-temp"></span>
+            <span id="tomorrow"></span>
+            <span id="dayaftertomorrow"></span>
         </div>
         <div id="spotlights"></div> 
     </main>
