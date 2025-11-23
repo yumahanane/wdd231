@@ -1,7 +1,7 @@
 // Select HTML elements for current weather 
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
-const figCaption = document.querySelector("figcaption");
+const description = document.querySelector("p");
 
 // Select HTML elements for weather forecast
 const currentday = document.querySelector("#today");
@@ -40,9 +40,9 @@ function displayResults(data) {
     // for current weather
     const iconsrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.list[0].weather[0].description);
+    weatherIcon.setAttribute('alt', 'weather icon');
     currentTemp.innerHTML = `${data.list[0].main.temp}&deg;C`; // &deg; is code for degree symbol
-    figCaption.innerHTML = `${data.list[0].weather[0].description}`;
+    description.innerHTML = `${data.list[0].weather[0].description}`;
 
     // for weather forecast
     currentday.innerHTML = `Today: <strong>${data.list[0].main.temp}&deg;C</strong>`;
