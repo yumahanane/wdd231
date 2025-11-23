@@ -1,4 +1,4 @@
-import { key } from '../../../Private/Key/key.mjs'; 
+import { key } from './key.mjs'
 
 
 // Select HTML elements for current weather 
