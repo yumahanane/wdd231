@@ -31,7 +31,7 @@
         "contact": "(+258) 82 573 3281",
         "websiteurl": "https://aflorista.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/florista.webp",
-        "membershiplevel": 3
+        "membershiplevel": 1
     },
     {
         "name": "Carpintaria da Beira",
@@ -39,7 +39,7 @@
         "contact": "(+258) 85 771 2415",
         "websiteurl": "https://carpintariadabeira.com/",
         "imageurl": "https://yumahanane.github.io/wdd231/chamber/images/carpintaria.webp",
-        "membershiplevel": 3
+        "membershiplevel": 1
     }, 
     {
         "name": "Cantinho da Arte",

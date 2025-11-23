@@ -13,8 +13,9 @@ getMembersData();
 function displayMembers(companies) {
     cards.innerHTML = "";
 
+    let filtered = [];
     companies.forEach(company => {
-        if (company.membershiplevel == 2) {
+        if (company.membershiplevel == 2 || company.membershiplevel == 3) {
             
             let card = document.createElement('section');
            
@@ -45,4 +46,6 @@ function displayMembers(companies) {
             cards.appendChild(card);
         }
     });
+
 }
+
