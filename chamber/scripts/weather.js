@@ -39,8 +39,9 @@ const day = new Date();
 function displayResults(data) {
     // for current weather
     const iconsrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`
+    const iconalt = `${data.list[0].weather[0].description}`;
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', 'weather icon');
+    weatherIcon.setAttribute('alt', iconalt);
     currentTemp.innerHTML = `${data.list[0].main.temp}&deg;C`; // &deg; is code for degree symbol
     figCaption.innerHTML = `${data.list[0].weather[0].description}`;
 
