@@ -45,9 +45,9 @@ function displayResults(data) {
     figCaption.innerHTML = `${data.list[0].weather[0].description}`;
 
     // for weather forecast
-    currentday.innerHTML = `Today: ${data.list[0].main.temp}&deg;C`;
-    tomorrow.innerHTML = `${weekday[day.getDay() + 1]}: ${data.list[1].main.temp}&deg;C`; 
-    aftertomorrow.innerHTML = `${weekday[day.getDay() + 2]}: ${data.list[2].main.temp}&deg;C`; 
+    currentday.innerHTML = `Today: <strong>${data.list[0].main.temp}&deg;C</strong>`;
+    tomorrow.innerHTML = `${weekday[day.getDay() + 1]}: <strong>${data.list[1].main.temp}&deg;C</strong>`; 
+    aftertomorrow.innerHTML = `${weekday[day.getDay() + 2]}: <strong>${data.list[2].main.temp}&deg;C</strong>`; 
 }
 
 apiFetch();

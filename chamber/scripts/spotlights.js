@@ -13,7 +13,6 @@ getMembersData();
 function displayMembers(companies) {
     cards.innerHTML = "";
 
-    let filtered = [];
     companies.forEach(company => {
         if (company.membershiplevel == 2 || company.membershiplevel == 3) {
             
@@ -26,8 +25,8 @@ function displayMembers(companies) {
             let siteurl = document.createElement('a');
 
             name.textContent = company.name;
-            address.textContent = company.address;
-            contact.textContent = company.contact;
+            address.innerHTML = `<strong>Address</strong>: ${company.address}`;
+            contact.innerHTML = `<strong>Phone</strong>: ${company.contact}`;
             siteurl.innerHTML = `${company.websiteurl}`;
             siteurl.setAttribute('href', company.websiteurl);
             siteurl.setAttribute('target', '_blank');
@@ -36,9 +35,9 @@ function displayMembers(companies) {
             logo.setAttribute('loading', 'lazy');
             logo.setAttribute('width', '150');
             logo.setAttribute('height', 'auto');
-
-            card.appendChild(logo);
+            
             card.appendChild(name);
+            card.appendChild(logo);
             card.appendChild(address);
             card.appendChild(contact);
             card.appendChild(siteurl);
