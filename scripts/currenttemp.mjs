@@ -1,4 +1,4 @@
-import { key } from '../Private/Key/key.mjs'
+import { key } from '../chamber/scripts/key.mjs'
 
 
 // Select HTML elements in the doc
