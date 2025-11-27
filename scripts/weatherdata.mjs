@@ -1,4 +1,4 @@
-import { key } from '../Private/Key/key.mjs'
+import { key } from '../chamber/scripts/key.mjs'
 
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
