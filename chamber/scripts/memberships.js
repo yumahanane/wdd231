@@ -68,3 +68,12 @@ function displayLevelDetails(level) {
         levelDetails.close();
     });
 }
+
+
+
+// ------ Timestamp ------
+
+const timestamp = document.querySelector("#timestamp");
+const date = new Date();
+
+timestamp.value = date.toDateString();

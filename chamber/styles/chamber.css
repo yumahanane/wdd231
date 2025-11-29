@@ -91,7 +91,7 @@ header span {
 
 /* -------- Main --------- */
 
-h1 {
+h1, main h2 {
     padding: 10px;
     color: #1a2238;
 }
@@ -317,11 +317,6 @@ footer p {
 
 /* -------- Form ------------ */
 
-main h2 {
-    color: #1a2238;
-    padding-left: 10px;
-}
-
 .myform {
     margin: .8rem 0 3rem 0;
     border: 1px solid #ddd;
@@ -395,6 +390,16 @@ main h2 {
     transform: scale(1.03);
 }
 
+
+#form-results {
+    background-color: #dbebf4;
+    padding: 0 1rem;
+    border: 1px solid #ed9074;
+    border-radius: 6px;
+    margin: 0 auto 1rem;
+}
+
+
 /* ------- Dialog ------- */
 
 #level-titles {
@@ -415,13 +420,13 @@ main h2 {
     padding: 0 2% .5rem;
     text-align: center;
     font-size: 0.9rem;
-    animation: fadeIn 5s;
-    animation: fadeColor 3s;
+    animation: fadeIn 5s ease;
+    animation: fadeColor 3s ease-in;
     transform: translateY(-10%) scale(1);
     transition: transform 1.5s ease-in-out;
 }
 
-#level-titles p {
+#level-titles p { 
     font-size: 1rem;
 }
 
@@ -488,9 +493,10 @@ dialog p {
 
 @keyframes fadeColor {
     from {
-        background-color: #f1b7a5;
+        background-color: #ff6a3d;
     }
     to {
         background-color: #ffffff;
     }
 }
+
