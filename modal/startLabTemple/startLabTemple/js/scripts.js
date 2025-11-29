@@ -4,7 +4,7 @@ import { temples } from '../data/temples.js'
 import { url } from '../data/temples.js'
 //console.log(url); //for testing
 
-// Grab a reference to the division ehere we display the items
+// Grab a reference to the division where we display the items
 const showHere = document.querySelector('#showHere');
 
 // Get a reference to the HTML dialog element

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Chiveve Chamber of Commerce</title>
+    <meta name="description"
+        content="The Chiveve Chamber of Commerce Join page provides a membership application form for prospective members.">
+    <meta name="author" content="Yuma Natalia Hanane">
+    <meta property="og:title" content="Join | Chiveve Chamber of Commerce">
+    <meta property="og:description"
+        content="The Chiveve Chamber of Commerce Join page provides a membership application form for prospective members.">
+    <meta property="og:image" content="https://yumahanane.github.io/wdd231/chamber/images/networking.webp">
+    <meta property="og:url" content="https://yumahanane.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/memberships.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/river.svg" alt="site logo" loading="lazy" width="50" height="50">
+        <span>Chiveve Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join</h1>
+        <div id="join-container">
+            <section id="form-section">
+                <h2>Membership Application</h2>
+                <form method="get" action="thanks.html" class="myform">
+                    <label>First Name* <input type="text" name="fname" title="First Name" autocomplete="given-name" required></label>
+                    <label>Last Name* <input type="text" name="lname" title="Last Name" autocomplete="family-name" required></label>
+                    <label>Email* <input type="email" name="email" title="Email" placeholder="someone@gmail.com" autocomplete="email" required></label>
+                    <label>Phone Number* <input type="tel" name="phone" title="Phone Number" autocomplete="tel" required></label>
+                    <label>Business/Organization* <input type="text" name="org" title="Business/Organization"  autocomplete="organization" required></label>
+                    <label>Organizational Title <input type="text" name="orgtitle" title="Organizational Title (Only accepts alpha characters, hyphens, spaces and must have at least 7 characters)" autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$"></label>
+                    
+                    <div>Membership Level</div>
+                    <label class="radio"><input type="radio" name="level" value="np" required>Non Profit</label>
+                    <label class="radio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="radio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="radio"><input type="radio" name="level" value="gold">Gold</label>
+            
+                    <label>Business/Organization Description <textarea name="orgdescription" title="Business/Organization Description" rows="10"></textarea></label> 
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Apply for Membership">
+                </form>
+            </section>
+            <section id="levels-section">
+                <h2>Membership Levels</h2>
+                <div id="level-titles"></div>
+                    <dialog id="dialogBox">
+                    </dialog>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <p class="chamber-name"><strong>Chiveve Chamber of Commerce</strong></p>
+            <p>305 Avenida Eduardo Mondlane</p>
+            <p>Beira, Mozambique 2100</p>
+            <p>info@chivevecc.org</p>
+            <p>(+258) 82-518-9380</p>
+        </div>
+        <div class="socialLinks">
+            <a href="http://www.youtube.com/@yumahanane3395" target="_blank"><img src="images/youtube.svg"
+                    alt="youtube link" loading="lazy" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/yumah/" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin link" loading="lazy" width="16" height="16"></a>
+            <a href="https://www.facebook.com/yuma.natalia/" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook link" loading="lazy" width="16" height="16"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Yuma Natalia Hanane</p>
+            <p>&copy; <span id="currentyear"></span>🌊 Chiveve Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

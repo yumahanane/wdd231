@@ -93,6 +93,7 @@ header span {
 
 h1 {
     padding: 10px;
+    color: #1a2238;
 }
 
 .menu {
@@ -314,3 +315,156 @@ footer p {
     padding: 10px 0;
 }
 
+/* -------- Form ------------ */
+
+main h2 {
+    color: #1a2238;
+    padding-left: 10px;
+}
+
+.myform {
+    margin: .8rem 0 3rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+
+.myform label {
+    display: block;
+    padding-top: 1rem;
+    color: #1a2238;
+    font-size: 0.9rem;
+}
+
+.myform .radio {
+    padding-top: .5rem;
+}
+
+.myform label:last-of-type {
+    padding-top: 1.8rem;
+}
+
+.myform div {
+    padding-top: 1.5rem;
+    color: #1a2238;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.myform input[type="text"],
+.myform input[type="tel"],
+.myform textarea,
+.myform input[type="email"] {
+    background-color: #dbebf4;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #1a2238;
+    width: 100%;
+    max-width: 320px;
+    appearance: none;
+}
+
+.myform input[type="radio"] {
+    margin-right: 6px;
+}
+
+
+.myform input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#f1b7a5, #ff6a3d);
+    color: #1a2238;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem 0;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.myform input:required {
+    border-bottom: 8px solid #f1b7a5;
+}
+
+.myform input:required:valid {
+    border-bottom: 8px solid #1a2238;
+}
+
+.myform input[type="submit"]:hover {
+    transform: scale(1.03);
+}
+
+/* ------- Dialog ------- */
+
+#level-titles {
+    padding: 10px;
+    margin: .8rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+    color: #1a2238;
+   
+}
+
+#level-titles section {
+    padding: 10px;
+    margin: .8rem 0;
+    border: 5px outset #f1b7a5;
+    border-radius: 0 25px;
+    padding: 0 2% .5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#level-titles p {
+    font-size: 1rem;
+}
+
+
+#level-titles button {
+    border: 5px outset #8bc2e3;
+    border-radius: 0 25px;
+    padding: 0.3rem 2%;
+    text-align: center;
+    background-color: #b1d6ec;
+}
+
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+
+dialog h2 {
+    margin: 0;
+    color: #275690;
+    background-color: #c9deec;
+    padding: .6rem;
+    border: 5px outset #8bc2e3;
+    border-radius: 0 25px;
+}
+
+
+dialog button {
+    float: right;
+    margin: 0;
+    padding: .9rem;
+    border: none;
+    box-shadow: 0 0 10px #aaaaaa;
+}
+
+dialog p {
+    padding-top: 10px;
+    color: #1a2238;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+}
