@@ -415,6 +415,10 @@ main h2 {
     padding: 0 2% .5rem;
     text-align: center;
     font-size: 0.9rem;
+    animation: fadeIn 5s;
+    animation: fadeColor 3s;
+    transform: translateY(-10%) scale(1);
+    transition: transform 1.5s ease-in-out;
 }
 
 #level-titles p {
@@ -428,6 +432,10 @@ main h2 {
     padding: 0.3rem 2%;
     text-align: center;
     background-color: #b1d6ec;
+}
+
+#level-titles button:hover {
+    transform: scale(1.2);
 }
 
 
@@ -467,4 +475,22 @@ dialog p {
 
 ::backdrop {
     background-color: rgba(255, 255, 255, 0.75);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: #f1b7a5;
+    }
+    to {
+        background-color: #ffffff;
+    }
 }
