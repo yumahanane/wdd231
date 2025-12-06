@@ -269,6 +269,10 @@ footer p {
     background-color: #ffffff;
 }
 
+#citation {
+    color: white;
+}
+
 /* ------- Home Page ------ */
 .hero img {
     margin: 0 auto;
