@@ -18,6 +18,14 @@
         padding-right: 15px;
     }
 
+    .grid img:hover {
+        transform: scale(1.1);
+    }
+    
+    .grid button:hover, .list button:hover {
+        transform: scale(.9);
+    }
+
     .grid #acard p {
         padding-top: 10px;
     }

@@ -63,19 +63,21 @@
     .grid #acard img {
         padding-left: 10px;
     }
-    .grid img:hover {
-        transform: scale(1.1);
-    }
+    
 
     .list section {
         grid-template-columns: 20% 30% 15% 28%;
         column-gap: 20px;
-        border-top: 1px solid #cdd2ed;
+        border-top: 3px solid #f1b7a5;
         padding: 0.5rem 10px;       
     }
 
     .list h2, .list p, .list a, .list button {
         font-size: 1rem;
+    }
+
+    .list a:hover {
+        transform: scale(1.1);
     }
 
 

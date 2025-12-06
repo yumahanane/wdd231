@@ -78,3 +78,39 @@ function displayMoreDetails(place) {
     });
 }
 
+// ---------- last visit tracking -------
+
+const message = document.querySelector('#visits');
+
+let visitsNum = Number(window.localStorage.getItem("visits-ls"));
+
+localStorage.setItem("lastVisited", new Date().toISOString());
+
+let lastvisit = Date(window.localStorage.getItem("lastVisited"));
+// console.log(lastvisit); // for testing
+
+let lastvisitInMs = new Date(lastvisit).getTime(); // to convert from Sat Dec 06 2025 21:17:38 GMT+0200 (South Africa Standard Time) to milliseconds
+// console.log(ms) // for testing
+
+let today = new Date();
+// console.log(today); // for testing
+
+
+let timediff = (lastvisitInMs - today);
+
+if (visitsNum !== 0) {
+    if (timediff < 1) {
+        message.innerHTML = `Back so soon! Awesome!.`;
+    } else {
+        if (timediff == 1) {
+            message.innerHTML = `You last visited ${timediff} day ago`;
+        } else {
+            message.innerHTML = `You last visited ${timediff} days ago`;
+        }
+    }
+} else {
+    message.textContent = `Welcome! Let us know if you have any questions.`;
+}
+
+visitsNum++;
+localStorage.setItem("visits-ls", visitsNum);

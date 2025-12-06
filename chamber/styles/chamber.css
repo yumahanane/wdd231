@@ -96,6 +96,13 @@ h1, main h2 {
     color: #1a2238;
 }
 
+#visits {
+    text-align: center;
+    background-color: #d0e3ef;
+    padding: 10px;
+    margin: 0 10%;
+}
+
 .menu {
     margin: 1rem auto;
     text-align: center;     
@@ -136,10 +143,6 @@ h1, main h2 {
         "button";
 }
 
-.grid section:hover {
-    transform: scale(1.03);
-}
-
 .grid h2 {
     display: none;
 }
@@ -171,9 +174,7 @@ h1, main h2 {
     background-color: #b1d6ec;
 }
     
-.grid button:hover {
-    transform: scale(1.2);
-}
+
 
 .list section {
     display: grid;
@@ -217,10 +218,6 @@ h1, main h2 {
     text-align: center;
     background-color: #b1d6ec;
     font-size: .5rem;
-}
-
-.list button:hover, .list a:hover {
-    transform: scale(1.2);
 }
 
 
@@ -553,4 +550,5 @@ dialog p {
         background-color: #ffffff;
     }
 }
+
 
