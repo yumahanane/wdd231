@@ -1,5 +1,4 @@
-@media only screen and (min-width: 38rem) {
-    /* 38rem is 608px*/
+@media only screen and (min-width: 1025px) {
 
     header,
     main,
@@ -59,6 +58,11 @@
     .grid section {
         margin: 1rem 0;
         padding: 15px 0;
+    }
+
+    .grid img:hover {
+        transform: scale(1.1);
+        /* NEEDS TO HAVE ANOTHER TYPE OF EEFECT*/
     }
 
 

@@ -129,7 +129,6 @@ h1, main h2 {
     transform: scale(1.03);
 }
 
-
 .grid h2 {
     display: none;
 }
@@ -137,6 +136,7 @@ h1, main h2 {
 .grid #place-title {
     display: block;
 }
+
 
 .grid p, .grid a {
     margin: 5px 0;
@@ -161,10 +161,9 @@ h1, main h2 {
 
 .list section {
     display: grid;
-    grid-template-columns: 20% 15% 11% 40%;
-    column-gap: 5px;
-    border-top: 1px solid #cdd2ed;
-    padding: 0.2rem 0 0 10px;
+    grid-template-columns: 20% 17% 11% 42%;
+    column-gap: 9px;
+    border-top: 3px solid #f1b7a5;
     background-color: #b1d6ec;
     align-items: center;
 }
@@ -182,6 +181,26 @@ h1, main h2 {
 .list section:nth-child(even) {
     background-color: #ffffff;
 }
+
+.list #acard {
+    grid-template-columns: 20% 38% 15% 17%;
+}
+
+
+.list button {
+    background-image: linear-gradient(#f1b7a5, #ec8465);
+    border: 4px outset #8bc2e3;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    background-color: #b1d6ec;
+    font-size: .5rem;
+}
+
+.list button:hover, .list a:hover {
+    transform: scale(1.2);
+}
+
 
 /* -------- Footer -------- */
 
