@@ -1,3 +1,30 @@
 @media only screen and (min-width: 641px) {
 
+    .grid #acard {
+        text-align: left;
+        grid-template-areas:
+            "name name"
+            "photo description"
+            "photo address"
+            "button button";
+    }
+    
+    .grid #acard h2 {
+        grid-area: name;
+    }
+
+    .grid #acard img {
+        grid-area: photo;
+        padding-right: 15px;
+    }
+
+    .grid #acard p {
+        padding-top: 10px;
+    }
+
+    .grid button {
+        grid-area: button;
+        margin: 10px;
+    }
+
 }

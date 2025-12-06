@@ -123,6 +123,17 @@ h1, main h2 {
     background-color: #ffffff;
     text-align: center;
     box-shadow: #00000059 0px 5px 15px;
+
+}
+
+.grid #acard {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "address"
+        "button";
 }
 
 .grid section:hover {
@@ -137,6 +148,10 @@ h1, main h2 {
     display: block;
 }
 
+.grid #acard img {
+    display: block;
+    margin: 0 auto 10px;
+}
 
 .grid p, .grid a {
     margin: 5px 0;
@@ -145,6 +160,7 @@ h1, main h2 {
 
 .grid #place-address {
     padding: 40px 0 20px;
+    grid-area: address;
 }
 
 .grid button {
@@ -183,7 +199,13 @@ h1, main h2 {
 }
 
 .list #acard {
-    grid-template-columns: 20% 38% 15% 17%;
+    grid-template-columns: 22% 36% 15% 17%;
+    grid-template-areas:
+        "name description address button";
+}
+
+.list #place-address {
+    grid-area: address;
 }
 
 

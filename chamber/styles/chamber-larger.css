@@ -51,7 +51,7 @@
 
     .grid  {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 0 1rem;
     }
 
@@ -60,11 +60,12 @@
         padding: 15px 0;
     }
 
+    .grid #acard img {
+        padding-left: 10px;
+    }
     .grid img:hover {
         transform: scale(1.1);
-        /* NEEDS TO HAVE ANOTHER TYPE OF EEFECT*/
     }
-
 
     .list section {
         grid-template-columns: 20% 30% 15% 28%;
@@ -73,9 +74,10 @@
         padding: 0.5rem 10px;       
     }
 
-    .list h2, .list p, .list a {
+    .list h2, .list p, .list a, .list button {
         font-size: 1rem;
     }
+
 
     footer {
         display: flex;

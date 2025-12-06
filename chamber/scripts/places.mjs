@@ -50,8 +50,8 @@ function displayAreas(places) {
 
         card.appendChild(name);
         card.appendChild(photo);
-        card.appendChild(description);
         card.appendChild(address);
+        card.appendChild(description);
         card.appendChild(moredetails);
 
         cards.appendChild(card);
