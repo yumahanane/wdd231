@@ -118,8 +118,8 @@ h1, main h2 {
 
 .grid section { 
     border: 1px solid #cdd2ed;
-    margin: 1rem;
-    padding: 15px;
+    margin: 1rem 5px;
+    padding: 15px 5px;
     background-color: #ffffff;
     text-align: center;
     box-shadow: #00000059 0px 5px 15px;
@@ -129,12 +129,13 @@ h1, main h2 {
     transform: scale(1.03);
 }
 
-.grid img {
-    margin: 10px;
-}
 
 .grid h2 {
     display: none;
+}
+
+.grid #place-title {
+    display: block;
 }
 
 .grid p, .grid a {
@@ -142,8 +143,20 @@ h1, main h2 {
     font-size: 1rem;
 }
 
-.grid a{
-    font-size: .9rem;
+.grid #place-address {
+    padding: 40px 0 20px;
+}
+
+.grid button {
+    border: 5px outset #8bc2e3;
+    border-radius: 25px;
+    padding: 0.3rem 15%;
+    text-align: center;
+    background-color: #b1d6ec;
+}
+    
+.grid button:hover {
+    transform: scale(1.2);
 }
 
 .list section {

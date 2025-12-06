@@ -37,7 +37,9 @@ function displayAreas(places) {
         let moredetails = document.createElement('button');
 
         name.textContent = place.title;
+        name.setAttribute('id', 'place-title');
         address.textContent = place.address;
+        address.setAttribute('id', 'place-address');
         description.textContent = place.description;
         moredetails.innerHTML = `${place.moreinfo}`
         moredetails.textContent = "Learn More";
