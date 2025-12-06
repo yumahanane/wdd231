@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Open Sans', 'Crimson Text', Arial, sans-serif;
+    font-weight: 500;
 }
 
 header, main, footer {
@@ -14,14 +15,22 @@ header, main, footer {
     text-align: center;
 }
 
+main {
+    background: linear-gradient(rgb(247, 244, 238, 0.5)), url("../images/wallpaper.jpg");
+    background-size: contain;
+    
+    
+}
+
 h1 {
     padding-top: 2rem;
 }
 
-header h1, header p {
-    background-color: #00907d;
+header h1, header p, footer, footer p {
+    background-color: #01463c;
     text-align: center;
-    color: #f3eada;
+    color: #f7f4ee;
+    font-weight: 700;
 }
 
 h2 {
@@ -51,6 +60,7 @@ p {
 ul {
     text-align: start;
     padding-bottom: 1rem;
+    list-style: none;
 }
 
 li {
@@ -59,12 +69,9 @@ li {
 
 
 img {
-    border: 5px outset #00907d;
+    border: 5px outset #f3eada;
     background-color: #effcf9;
     padding: 1rem;
     margin: 1rem;
 }
 
-footer p {
-    text-align: center;
-}
