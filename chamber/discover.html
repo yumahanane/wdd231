@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Chiveve Chamber of Commerce</title>
-    <meta name="description" content="The Chiveve Chamber of Commerce directory page provides information such as address and contacts of local businesses.">
+    <title>Discover | Chiveve Chamber of Commerce</title>
+    <meta name="description" content="The Chiveve Chamber of Commerce Discover page provides information about the Chiveve area.">
     <meta name="author" content="Yuma Natalia Hanane">
-    <meta property="og:title" content="Directory | Chiveve Chamber of Commerce">
-    <meta property="og:description" content="The Chiveve Chamber of Commerce directory page provides information such as address and contacts of local businesses.">
+    <meta property="og:title" content="Discover | Chiveve Chamber of Commerce">
+    <meta property="og:description" content="The Chiveve Chamber of Commerce Discover page provides information about the Chiveve area.">
     <meta property="og:image" content="https://yumahanane.github.io/wdd231/chamber/images/networking.webp">
     <meta property="og:url" content="https://yumahanane.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="styles/chamber-larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/chamber.js" defer></script>
-
+    <script type="module" src="scripts/places.mjs"></script>
 </head>
 <body>
     <header>
@@ -30,19 +29,16 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
     <main>
-        <h1>Business Directories</h1>
-        <div class="menu">
-            <button type="button" id="grid">&#9783;</button>
-            <button type="button" id="list">&#9776;</button>
-        </div>
+        <h1>Discover</h1>
         <div id="cards"></div>
+        
     </main>
     <footer>
         <div class="contact">
