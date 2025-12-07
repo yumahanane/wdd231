@@ -1,0 +1,162 @@
+* {
+    font-family: 'Opens Sans', 'Crimson Text' sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+/* --------- Header ---------- */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    /* border-bottom: 1px solid pink; */
+    background-color: #01463c;
+    color: #f7f4ee;
+    column-gap: 8px;
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 130%;
+    height: auto;
+}
+
+header span {
+    padding-left: 6px;
+}
+
+/* -------- Hamburger Button --------- */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #f7f4ee;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* changed font-family because "Open Sans" was displying a small X */
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/* ---------- Navigation --------- */
+
+.navigation {
+    display: none; /* not display the navigation bar by default*/
+    background-color: #01463c;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f7f4ee;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #f7f4ee;
+    color: #f7f4ee;
+}
+
+.navigation li.current {
+    background-color: #f7f4ee;
+}
+
+.navigation li.current a {
+    color: #01463c;
+}
+
+.navigation a:hover {
+    background-color: #f7f4ee;
+    color: #01463c;
+  
+}
+
+/* -------- Main --------- */
+
+main {
+    background: linear-gradient(rgba(247, 244, 238, 0.5), rgba(236, 215, 173, 0.5)), url("../images/wallpaper.jpg");
+    background-size: contain;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+.argument {
+    background-color: #01463c;
+    color: #f7f4ee;
+    border: 3px outset #fefead;
+    margin: 10px;   
+}
+
+.argument p {
+    padding: 0 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #fefead;
+    padding: 10px;
+    margin: 10px 0;
+    /* border-bottom: 5px solid #01463c; */
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgb(21, 51, 24);
+}
+
+#check-galleria {
+    text-align: center;
+}
+
+/* -------- Footer -------- */
+
+footer {
+    background-color:white;
+    padding: 1rem 10px;
+    text-align: center;   
+    color: #01463c;
+}
+
+.socialLinks {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+}
+
+.socialLinks a {
+    display: flex;
+    width: 44px; /* touch device*/
+    height: 44px;
+    border:1px solid #cbb993;
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialLinks img {
+    width: 22px;
+    height: 22px;
+}
+
+.socialLinks a:hover {
+    background-color: rgb(222, 243, 225);
+}

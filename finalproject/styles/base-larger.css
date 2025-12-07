@@ -1,0 +1,65 @@
+@media only screen and (min-width: 38rem) { /* 38rem is 608px*/
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block; /* ensures that the navigation shows whether show class is on or off*/
+        margin: 0 auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        border: none;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        grid-template-areas: 
+        "h1 h1"
+        "h2 h2"
+        "photo argument "
+        "link argument"
+    }
+
+    h1 {
+        grid-area: h1;
+    }
+
+    h2 {
+        grid-area: h2;
+    }
+
+    main img {
+        grid-area: photo;
+
+    }
+   
+    #check-galleria {
+        grid-area: link;
+    }
+
+    .argument {
+        grid-area: argument;
+    }
+   
+    footer {
+        margin-top: 10px;
+    }
+}
