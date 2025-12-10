@@ -10,9 +10,8 @@ header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
-    /* border-bottom: 1px solid pink; */
-    background-color: #01463c;
-    color: #f7f4ee;
+    background-color:white;
+    color: #01463c;
     column-gap: 8px;
     align-items: end;
 }
@@ -21,10 +20,12 @@ header img {
     display: block;
     width: 130%;
     height: auto;
+    
 }
 
 header span {
     padding-left: 6px;
+    font-size: 3rem;
 }
 
 /* -------- Hamburger Button --------- */
@@ -33,7 +34,7 @@ header span {
     background: none;
     border: none;
     font-size: 2rem;
-    color: #f7f4ee;
+    color: #01463c;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* changed font-family because "Open Sans" was displying a small X */
 }
@@ -75,27 +76,32 @@ header span {
 
 .navigation li.current {
     background-color: #f7f4ee;
+    border: 2px solid #01463c;
 }
 
 .navigation li.current a {
     color: #01463c;
+    
 }
 
 .navigation a:hover {
     background-color: #f7f4ee;
     color: #01463c;
-  
+    border: 2px solid #01463c;
+    border-left: none;
 }
 
 /* -------- Main --------- */
 
-main {
+#container {
     background: linear-gradient(rgba(247, 244, 238, 0.5), rgba(236, 215, 173, 0.5)), url("../images/wallpaper.jpg");
     background-size: contain;
+    padding-bottom: 1rem;
 }
 
 h1 {
     padding-left: 10px;
+    color: #01463c;
 }
 
 .argument {
@@ -106,18 +112,20 @@ h1 {
 }
 
 .argument p {
-    padding: 0 10px;
+    padding: 0 20px;
+    line-height: 35px;
 }
 
 h2 {
     text-align: center;
     background-color: #fefead;
     padding: 10px;
-    margin: 10px 0;
-    /* border-bottom: 5px solid #01463c; */
+    margin: 0;
+    color: #01463c;
+    font-size: 1.5rem;
 }
 
-img {
+#container img {
     display: block;
     margin: 20px auto;
     box-shadow: 0 0 10px rgb(21, 51, 24);
@@ -146,7 +154,7 @@ footer {
     display: flex;
     width: 44px; /* touch device*/
     height: 44px;
-    border:1px solid #cbb993;
+    border:2px solid #cbb993;
     border-radius: 22px;
     justify-content: center;
     align-items: center;
