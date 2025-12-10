@@ -4,9 +4,13 @@
         grid-template-columns: 24px auto;
     }
 
+    header img {
+        width: 300%;
+    }
+
     header span {
-        
         font-size: 5rem;
+        padding-left: 45px;
     }
     
     .hamburger {

@@ -17,14 +17,15 @@ header {
 }
 
 header img {
-    display: block;
-    width: 130%;
+    display: flex;
+    width: 200%;
     height: auto;
+    align-self: center; 
     
 }
 
 header span {
-    padding-left: 6px;
+    padding-left: 15px;
     font-size: 3rem;
 }
 
