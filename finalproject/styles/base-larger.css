@@ -63,6 +63,32 @@
     .argument {
         grid-area: argument;
     }
+
+    #filtered div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 10px;
+        margin: 1rem;
+    }
+
+    #filtered img:hover {
+        transform: scale(1.03);
+    }
+
+    .myform {
+        margin: 1rem;
+    }
+
+    .myform input[type="text"],
+    .myform textarea,
+    .myform input[type="email"] {
+        max-width: 450px;
+    }
+
+    .myform input[type="submit"] {
+        display: block;
+        margin-top: 2.5rem;
+    }
    
     footer {
         margin-top: 10px;

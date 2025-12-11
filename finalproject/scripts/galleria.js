@@ -6,32 +6,31 @@ async function getGalleriaData() {
     const data = await response.json();
     displayPhotos(data.photos);
 
+
+    const allOutfits = document.querySelector("#all");
+    allOutfits.addEventListener("click", () => {
+        filterPhotos(data.photos);    
+    });
+
+    const dressesOutfits = document.querySelector("#dresses");
+    dressesOutfits.addEventListener("click", () => {
+        filterPhotos(data.photos.filter(photo => photo.category === "dress"));
+    });
+
+    const skirtsOutfits = document.querySelector("#skirts");
+    skirtsOutfits.addEventListener("click", () => {
+        filterPhotos(data.photos.filter(photo => photo.category === "skirt"));
+    });
+
+    const pantsOutfits = document.querySelector("#pants");
+    pantsOutfits.addEventListener("click", () => {
+        filterPhotos(data.photos.filter(photo => photo.category === "pants"));
+    });
+
 };
 
+getGalleriaData();
 
-
-// call the function to create a section with all the courses, displayed by the title only
-
-
-const allCourses = document.querySelector("#all");
-allCourses.addEventListener("click", () => {
-    filterCourses(updatedCourses);
-    countCredits(updatedCourses);
-});
-
-const wddCourses = document.querySelector("#wdd");
-wddCourses.addEventListener("click", () => {
-    filterCourses(updatedCourses.filter(course => course.subject === "WDD"));
-    countCredits(updatedCourses.filter(course => course.subject === "WDD"));
-
-});
-
-const cseCourses = document.querySelector("#cse");
-cseCourses.addEventListener("click", () => {
-    filterCourses(updatedCourses.filter(course => course.subject === "CSE"));
-    countCredits(updatedCourses.filter(course => course.subject === "CSE"));
-
-}); 
 
 
 
@@ -75,26 +74,39 @@ function displayPhotos() {
     document.querySelector("#menu").appendChild(options);
 }
 
-function filterCourses(coursesArray) {
+
+
+function filterPhotos(photosArray) {
     document.querySelector("#filtered").innerHTML = "";
 
     let cards = document.createElement("div");
-    coursesArray.forEach(course => {
-        let courseBox = document.createElement("section"); // A course
+    photosArray.forEach(photo => {
+        let card = document.createElement("section"); // A photo
 
-        courseBox.innerHTML = `${course['subject']} ${course['number']}`;
+        let image = document.createElement('img');
+        let occasion = document.createElement('p');
+        let category = document.createElement('p');
+        let pattern = document.createElement('p');
+        let fittype = document.createElement('p');
 
-        cards.appendChild(courseBox);
+        occasion.innerHTML = `Occasion: ${photo.occasion}`;
+        category.innerHTML = `Category: ${photo.category}`;
+        pattern.innerHTML = `Pattern: ${photo.pattern}`;
+        fittype.innerHTML = `Fitting: ${photo.fittype}`;
+        image.setAttribute('src', photo.imageurl);
+        image.setAttribute('alt', `Photo of ${photo.category} for ${photo.occasion} occasion`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '300');
+        image.setAttribute('height', 'auto');
 
-        if (course['completed'] == false) {
-            courseBox.setAttribute("class", "toNotColor");
-        }
+        card.appendChild(image);
+        card.appendChild(occasion);
+        card.appendChild(category);
+        card.appendChild(pattern);
+        card.appendChild(fittype);
 
-        courseBox.addEventListener('click', () => {
-            displayCourseDetails(course);
-        });
+        cards.appendChild(card);
     });
 
     document.querySelector("#filtered").appendChild(cards);
-
 }

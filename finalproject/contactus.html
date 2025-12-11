@@ -36,7 +36,27 @@
     </nav>
     <main>
         <h1>Contact Us</h1>
-
+        <div id="join-container">
+            <section id="form-section">
+                <h2>Feedback Form</h2>
+                <form method="get" action="thankyou.html" class="myform">
+                    <label>First Name* <input type="text" name="fname" title="First Name" autocomplete="given-name" required></label>
+                    <label>Last Name <input type="text" name="lname" title="Last Name" autocomplete="family-name"></label>
+                    <label>Email* <input type="email" name="email" title="Email" placeholder="someone@gmail.com" autocomplete="email" required></label>
+        
+                    <div>The Church of Jesus Christ of Latter-days Saints Membership </div>
+                    <label class="radio"><input type="radio" name="membership" value="member" required>Member of The Church</label>
+                    <label class="radio"><input type="radio" name="membership" value="friend">Friend of The Church</label>
+        
+                    <label>Message* <textarea name="feedback" title="Feedback" rows="10" required></textarea></label>
+            
+                    <label for="imageUpload">Choose an image to upload:</label>
+                    <input type="file" id="imageUpload" name="image" accept="image/*">
+        
+                    <input type="submit" value="Send Feedback">
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="socialLinks">
