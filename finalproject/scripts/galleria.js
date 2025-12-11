@@ -15,21 +15,21 @@ async function getGalleriaData() {
 
         const dressesOutfits = document.querySelector("#dresses");
         dressesOutfits.addEventListener("click", () => {
-            filterPhotos(data.photos.filter(photo => photo.category === "dress"));
+            filterPhotos(data.photos.filter(photo => photo.category === "Dress"));
             localStorage.setItem("pref", "dresses");
 
         });
 
         const skirtsOutfits = document.querySelector("#skirts");
         skirtsOutfits.addEventListener("click", () => {
-            filterPhotos(data.photos.filter(photo => photo.category === "skirt"));
+            filterPhotos(data.photos.filter(photo => photo.category === "Skirt"));
             localStorage.setItem("pref", "skirts");
 
         });
 
         const pantsOutfits = document.querySelector("#pants");
         pantsOutfits.addEventListener("click", () => {
-            filterPhotos(data.photos.filter(photo => photo.category === "pants"));
+            filterPhotos(data.photos.filter(photo => photo.category === "Pants"));
             localStorage.setItem("pref", "pants");
 
         });
