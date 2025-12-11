@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modestly | Galleria Page</title>
-    <meta name="description" content="The Modestly Contact Us Page contains a form where the readers can send their comments and photos to be published in the website.">
+    <title>Modestly | Thank you Page</title>
+    <meta name="description" content="The Modestly Thank You Page shows appreciation for the completion of the feedback form and displays the information the user submitted through the form.">
     <meta name="author" content="Yuma Natalia Hanane">
-    <meta property="og:title" content="Modestly | Galleria Page">
-    <meta property="og:description" content="The Modestly Contact Us Page contains a form where the readers can send their comments and photos to be published in the website.">
+    <meta property="og:title" content="Modestly | Thank You Page">
+    <meta property="og:description" content="The Modestly Thank You Page shows appreciation for the completion of the feedback form and displays the information the user submitted through the form.">
     <meta property="og:image" content="https://yumahanane.github.io/wdd231/finalproject/images/meta-img.jpg">
-    <meta property="og:url" content="https://yumahanane.github.io/wdd231/finalproject/contactus.html">
+    <meta property="og:url" content="https://yumahanane.github.io/wdd231/finalproject/thankyou.html">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="styles/base-larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
-
 <body>
     <header>
         <img src="images/saffron.svg" loading="lazy" alt="site logo">
@@ -31,32 +31,15 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="galleria.html">Galleria</a></li>
-            <li class="current"><a href="contactus.html">Contact Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Contact Us</h1>
-        <div id="join-container">
-            <section id="form-section">
-                <h2>Feedback Form</h2>
-                <form method="get" action="thankyou.html" class="myform">
-                    <label>First Name* <input type="text" name="fname" title="First Name" autocomplete="given-name" required></label>
-                    <label>Last Name <input type="text" name="lname" title="Last Name" autocomplete="family-name"></label>
-                    <label>Email* <input type="email" name="email" title="Email" placeholder="someone@gmail.com" autocomplete="email" required></label>
+        <h1>Thank You For Your Feedback</h1>
+        <h2>Details</h2>
+        <div id="form-results"></div>
+        <div id="preference"></div>
         
-                    <div>The Church of Jesus Christ of Latter-days Saints Membership </div>
-                    <label class="radio"><input type="radio" name="membership" value="member" required>Member of The Church</label>
-                    <label class="radio"><input type="radio" name="membership" value="friend">Friend of The Church</label>
-        
-                    <label>Message* <textarea name="feedback" title="Feedback" rows="10" required></textarea></label>
-            
-                    <label for="imageUpload">Choose an image to upload:</label>
-                    <input type="file" id="imageUpload" name="image" accept="image/*">
-        
-                    <input type="submit" value="Send Feedback">
-                </form>
-            </section>
-        </div>
     </main>
     <footer>
         <div class="socialLinks">

@@ -9,28 +9,34 @@ async function getGalleriaData() {
 
     const allOutfits = document.querySelector("#all");
     allOutfits.addEventListener("click", () => {
-        filterPhotos(data.photos);    
+        filterPhotos(data.photos);   
+        localStorage.setItem("pref", "all");
     });
 
     const dressesOutfits = document.querySelector("#dresses");
     dressesOutfits.addEventListener("click", () => {
         filterPhotos(data.photos.filter(photo => photo.category === "dress"));
+        localStorage.setItem("pref", "dresses");
+
     });
 
     const skirtsOutfits = document.querySelector("#skirts");
     skirtsOutfits.addEventListener("click", () => {
         filterPhotos(data.photos.filter(photo => photo.category === "skirt"));
+        localStorage.setItem("pref", "skirts");
+
     });
 
     const pantsOutfits = document.querySelector("#pants");
     pantsOutfits.addEventListener("click", () => {
         filterPhotos(data.photos.filter(photo => photo.category === "pants"));
+        localStorage.setItem("pref", "pants");
+
     });
 
 };
 
 getGalleriaData();
-
 
 
 

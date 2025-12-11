@@ -166,6 +166,11 @@ h2 {
     box-shadow: 1px 1px 4px #999;
 }
 
+#filtered p {
+    margin: 0;
+    padding: 2px;
+}
+
 /* -------- Form ------------ */
 
 .myform {
@@ -200,7 +205,7 @@ h2 {
 .myform input[type="text"],
 .myform textarea,
 .myform input[type="email"] {
-    background-color: #f7f4ee;;
+    background-color: #f7f4ee;
     display: block;
     border: 1px solid #999;
     border-radius: 6px;
@@ -241,11 +246,20 @@ h2 {
 
 
 #form-results {
-    background-color: #dbebf4;
+    background-color: #f7f4ee;
     padding: 0 1rem;
-    border: 1px solid #ed9074;
+    border: 1px solid #01463c;
     border-radius: 6px;
     margin: 0 auto 1rem;
+}
+
+#preference {
+    background-color: #def3e1;
+    padding: 1rem;
+    border: 1px solid #01463c;
+    border-radius: 6px;
+    margin: 0 auto 1rem;
+    text-align: center;
 }
 
 
