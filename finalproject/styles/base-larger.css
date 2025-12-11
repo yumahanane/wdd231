@@ -47,14 +47,12 @@
         "button argument"
     }
 
-
     h2 {
         grid-area: h2;
     }
 
     main img {
         grid-area: photo;
-
     }
    
     #check-galleria {

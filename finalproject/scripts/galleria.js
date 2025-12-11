@@ -2,38 +2,40 @@
 const url = 'https://yumahanane.github.io/wdd231/finalproject/data/photos.json';
 
 async function getGalleriaData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayPhotos(data.photos);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        displayPhotos(data.photos);
+    
+        const allOutfits = document.querySelector("#all");
+        allOutfits.addEventListener("click", () => {
+            filterPhotos(data.photos);   
+            localStorage.setItem("pref", "all");
+        });
 
+        const dressesOutfits = document.querySelector("#dresses");
+        dressesOutfits.addEventListener("click", () => {
+            filterPhotos(data.photos.filter(photo => photo.category === "dress"));
+            localStorage.setItem("pref", "dresses");
 
-    const allOutfits = document.querySelector("#all");
-    allOutfits.addEventListener("click", () => {
-        filterPhotos(data.photos);   
-        localStorage.setItem("pref", "all");
-    });
+        });
 
-    const dressesOutfits = document.querySelector("#dresses");
-    dressesOutfits.addEventListener("click", () => {
-        filterPhotos(data.photos.filter(photo => photo.category === "dress"));
-        localStorage.setItem("pref", "dresses");
+        const skirtsOutfits = document.querySelector("#skirts");
+        skirtsOutfits.addEventListener("click", () => {
+            filterPhotos(data.photos.filter(photo => photo.category === "skirt"));
+            localStorage.setItem("pref", "skirts");
 
-    });
+        });
 
-    const skirtsOutfits = document.querySelector("#skirts");
-    skirtsOutfits.addEventListener("click", () => {
-        filterPhotos(data.photos.filter(photo => photo.category === "skirt"));
-        localStorage.setItem("pref", "skirts");
+        const pantsOutfits = document.querySelector("#pants");
+        pantsOutfits.addEventListener("click", () => {
+            filterPhotos(data.photos.filter(photo => photo.category === "pants"));
+            localStorage.setItem("pref", "pants");
 
-    });
-
-    const pantsOutfits = document.querySelector("#pants");
-    pantsOutfits.addEventListener("click", () => {
-        filterPhotos(data.photos.filter(photo => photo.category === "pants"));
-        localStorage.setItem("pref", "pants");
-
-    });
-
+        });
+    } catch (error) {
+        console.error("Error fetching data:", error); // Handle any errors
+    }
 };
 
 getGalleriaData();

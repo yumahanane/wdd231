@@ -1,129 +1,129 @@
 {
     "photos": [
         {
-            "occasion": "formal",
-            "category": "dress",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Formal",
+            "category": "Dress",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/blue-formal-dress-300.webp"
         },
         {
-            "occasion": "semi-formal",
-            "category": "dress",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Semi-formal",
+            "category": "Dress",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/brown-dress-300.webp"
         },
         {
-            "occasion": "casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "oversized",
+            "occasion": "Casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Oversized",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/casual-white-pants-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "skirt",
-            "pattern": "solid",
-            "fittype": "oversized",
+            "occasion": "Casual",
+            "category": "Skirt",
+            "pattern": "Solid",
+            "fittype": "Oversized",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/cetim-skirt-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "skirt",
-            "pattern": "floral",
-            "fittype": "regular",
+            "occasion": "Casual",
+            "category": "Skirt",
+            "pattern": "Floral",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/floral-skirt-300.jpg"
         },
         {
-            "occasion": "formal",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Formal",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/formal-suit-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "skirt",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Casual",
+            "category": "Skirt",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/jean-skirt-longsleeve-blouse-300.jpg"
         },
         {
-            "occasion": "formal",
-            "category": "dress",
-            "pattern": "lace",
-            "fittype": "regular",
+            "occasion": "Formal",
+            "category": "Dress",
+            "pattern": "Lace",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/lightgreen-formal-dress-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "oversized",
+            "occasion": "Casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Oversized",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/oversized-tshirt-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/pants-casual-300.jpg"
         },
         {
-            "occasion": "wedding",
-            "category": "dress",
-            "pattern": "lace",
-            "fittype": "regular",
+            "occasion": "Wedding",
+            "category": "Dress",
+            "pattern": "Lace",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/wed1-300.jpg"
         },
         {
-            "occasion": "formal",
-            "category": "dress",
-            "pattern": "floral",
-            "fittype": "regular",
+            "occasion": "Formal",
+            "category": "Dress",
+            "pattern": "Floral",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/pink-dress-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "oversized",
+            "occasion": "Casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Oversized",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/short-jeans-300.jpg"
         },
         {
-            "occasion": "semi-casual",
-            "category": "skirt",
-            "pattern": "floral",
-            "fittype": "regular",
+            "occasion": "Semi-casual",
+            "category": "Skirt",
+            "pattern": "Floral",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/pink-skirt-300.jpg"
         }, 
         {
-            "occasion": "casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "oversized",
+            "occasion": "Casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Oversized",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/stripped-vest-300.jpg"
         },
         {
-            "occasion": "semi-casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Semi-casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/vest-jeans-belt-300.jpg"
         },
         {
-            "occasion": "wedding",
-            "category": "dress",
-            "pattern": "solid",
-            "fittype": "regular",
+            "occasion": "Wedding",
+            "category": "Dress",
+            "pattern": "Solid",
+            "fittype": "Regular",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/wed6-300.jpg"
         },
         {
-            "occasion": "casual",
-            "category": "pants",
-            "pattern": "solid",
-            "fittype": "oversized",
+            "occasion": "Casual",
+            "category": "Pants",
+            "pattern": "Solid",
+            "fittype": "Oversized",
             "imageurl": "https://yumahanane.github.io/wdd231/finalproject/images/yellow-shirt-300.jpg"
         } 
     ]

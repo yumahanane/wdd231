@@ -20,8 +20,7 @@ header img {
     display: flex;
     width: 200%;
     height: auto;
-    align-self: center; 
-    
+    align-self: center;   
 }
 
 header span {
@@ -277,7 +276,6 @@ h2 {
     text-align: center;
 }
 
-
 dialog {
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .25rem;
@@ -287,7 +285,6 @@ dialog {
     width: 90%;
     max-width: fit-content;
 }
-
 
 dialog button {
     float: right;

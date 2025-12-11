@@ -1,6 +1,5 @@
 import { sources } from '../data/sources.mjs';
 
-
 createButton();
 
 function createButton() {
@@ -15,7 +14,6 @@ function createButton() {
     });
 
     document.querySelector("#sourcesButton").appendChild(sourceButton);
-
 }
 
 const sourcesDetails = document.querySelector('#dialogBox');
@@ -46,7 +44,6 @@ function displayDetails(sources) {
         sourcesDetails.appendChild(space);
     });
 
-     
     sourcesDetails.showModal();
 
     closeModal.addEventListener("click", () => {
