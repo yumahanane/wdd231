@@ -133,6 +133,7 @@ h2 {
 
 #check-galleria {
     text-align: center;
+    color: #01463c;
 }
 
 /* ---------- Galleria --------- */
@@ -223,7 +224,7 @@ h2 {
 .myform input[type="submit"] {
     border: none;
     background-image: linear-gradient(#868f8e, #01463c);
-    color: #f7f4ee;;
+    color: #f7f4ee;
     border-radius: 6px;
     padding: 0.8rem;
     width: 100%;
@@ -261,6 +262,50 @@ h2 {
     margin: 0 auto 1rem;
     text-align: center;
 }
+
+
+/* ------- Dialog ------- */
+
+#learnmore {
+    padding: 10px;
+    margin: 0 auto;
+    color: #01463c;
+}
+
+#learnmore p, #learnmore span {
+    line-height: 35px;
+    text-align: center;
+}
+
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: fit-content;
+}
+
+
+dialog button {
+    float: right;
+    margin: 0;
+    padding: .9rem;
+    border: none;
+    box-shadow: 0 0 10px #aaaaaa;
+}
+
+dialog p {
+    padding-top: 2px;
+    color: #01463c;
+    word-break: break-all;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+} 
 
 
 /* -------- Footer -------- */

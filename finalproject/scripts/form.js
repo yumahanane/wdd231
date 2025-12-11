@@ -1,11 +1,18 @@
 const userInfo = new URLSearchParams(window.location.search)
 
-
-document.querySelector('#form-results').innerHTML = `
-<p>Name: ${userInfo.get('fname')}</p>
-<p>Email: ${userInfo.get('email')}</p>
-<p>Your Message: ${userInfo.get('feedback')}</p>
-`;
+if (userInfo.lname !== "") {
+    document.querySelector('#form-results').innerHTML = `
+    <p>Name: ${userInfo.get('fname')} ${userInfo.get('lname')}</p>
+    <p>Email: ${userInfo.get('email')}</p>
+    <p>Your Message: ${userInfo.get('feedback')}</p>
+    `;
+} else {
+    document.querySelector('#form-results').innerHTML = `
+    <p>Name: ${userInfo.get('fname')}</p>
+    <p>Email: ${userInfo.get('email')}</p>
+    <p>Your Message: ${userInfo.get('feedback')}</p>
+    `;
+}
 
 // -------- preferences storage ------------------
 
