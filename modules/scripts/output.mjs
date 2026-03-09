@@ -1,3 +1,4 @@
+// functions to render the course title and sections to the page
 export function setTitle(course) {
     document.querySelector("#courseName").textContent = course.name;
     document.querySelector("#courseCode").textContent = course.code;

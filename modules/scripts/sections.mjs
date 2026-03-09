@@ -1,6 +1,8 @@
+// function that populates the section selection element on the page
+
 export function setSectionSelection() {
     const sectionSelect = document.querySelector("#sectionNumber");
-    byuiCourse.sections.forEach((section) => {
+    sections.forEach((section) => {
         const option = document.createElement("option");
         option.value = section.sectionNumber;
         option.textContent = `${section.sectionNumber}`;

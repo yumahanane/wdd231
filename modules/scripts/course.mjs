@@ -1,3 +1,6 @@
+// course object section data and its methods that are used to enroll
+// and drop students from the course
+
 const byuiCourse = {
     code: "WDD231",
     name: "Web Frontend Development I",
